@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="font-size: 32px">
     
+    <details id="root">
+        <summary>
+            The below is a list to demonstrate the event loop
+        </summary>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+        <li>********</li>
+    </details>
 </body>
-<script type = "text/javascript" src = "script.js"></script> 
+<script>
+    const root = document.getElementById('root')
+    console.log(root.open)
+    root.addEventListener('click', function(){
+        // state is changed here in async callback 
+        
+        console.log(`${root.open}: line 30`)
+
+        setTimeout(() => {
+            
+            console.log(`${root.open}: line 32`)
+            
+        },0)
+
+        console.log(`${root.open}: line 34`)
+    })
+</script>
 </html>
