@@ -6,3 +6,10 @@ This is a compilation of different small tutorials which I have created to help 
 However vanilla JavaScript is a powerful tool and taking the time to dive deap into the languages nuances and complexities has helped me to become a much better developer.
 
 
+Topics Include 
+* Assynchronous JavaScript
+* Creating and removing Dom Elements
+* Objects
+* Classes
+
+Each different branch is a new activity 
